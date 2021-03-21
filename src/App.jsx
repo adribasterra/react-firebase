@@ -5,14 +5,12 @@ import List from './components/list.jsx';
 import Temperature from './components/temperature.jsx';
 import Form from './components/form.jsx';
 
+import ListNames from './components/listNames.jsx';
+
 function App() {
   return (
     <div className="App">
-        <Hey></Hey>
-        <Counter></Counter>
-        <List></List>
-        <Temperature></Temperature>
-        <Form></Form>
+        <ListNames></ListNames>
     </div>
   );
 }
