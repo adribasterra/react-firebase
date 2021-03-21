@@ -55,13 +55,15 @@ const ListNames = () => {
                                     <li key={item.id} className="list-group-item float-left">
                                         {item.name}
                                         <button
-                                            className="btn btn-info float-right"
-                                            onClick={ () => { Edit(item)}}
-                                        >Edit</button>
-                                        <button
                                             className="btn btn-danger float-right"
                                             onClick={ () => { DeleteName(item.id)}}
+                                            style={{float: "right"}}
                                         >Delete</button>
+                                        <button
+                                            className="btn btn-info float-right"
+                                            onClick={ () => { Edit(item)}}
+                                            style={{float: "right"}}
+                                        >Edit</button>
                                     </li>
                                 )
                         }
